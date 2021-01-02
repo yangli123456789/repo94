@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>html 标签分类</h1>
+<h3> 1.块级标签：占据一整行</h3>
+<h4> 1)标题    h1~h6 </h4>
+<h4> 2)段落   p  </h4>
+<h4> 3)列表  ul(无序列表) ol(有序列表) +  li  </h4>
+<ul id="edu_list">
+	<li>小学</li>
+	<li>初中</li>
+	<li>高中</li>
+</ul>
+<ol type="a" >
+	<li>小学</li>
+	<li>初中</li>
+	<li>高中</li>
+</ol>
+
+<h4> 4)介绍 dl dt dd  </h4>
+<dl>
+	<dt>数学</dt>
+	<dd>加减乘除</dd>
+</dl>
+
+<h4> 5)表格 table + tr 行 + th 列头  + td 数据  </h4>
+<table border="1px" width="50%">
+	<tr>
+		<th>学号</th><th>班级</th><th>姓名</th><th>性别</th>
+	</tr>
+	<tr>
+		<td>001</td><td rowspan="4">软件1班</td><td>张三</td><td>男</td>
+	</tr>
+	<tr>
+		<td>002</td><td>李四</td><td>男</td>
+	</tr>
+	<tr>
+		<td>003</td><td>王五</td><td>男</td>
+	</tr>
+	<tr>
+		<td>004</td><td>张六</td><td>男</td>
+	</tr>
+	<tr>
+		<td>总人数</td><td colspan="3">4</td>
+	</tr>
+</table>
+
+
+
+<h3>2. 块级标签   是行内一块内容</h3>
+	<h4> 1)图片 image</h4>
+	<ol>
+		<li>同时指定图片的宽度和高度，图片可能产生变形</li>
+		<li>图片引用网络资源，可以直接引用网络路径</li>
+	</ol>
+	
+	<img alt="图片路径错误时显示的文字"
+		 src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2771978851,2906984932&fm=26&gp=0.jpg"
+		 width="300px" height="200px">
+	<img alt="图片路径错误时显示的文字"
+		 src = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fa1.att.hudong.com%2F62%2F02%2F01300542526392139955025309984.jpg&refer=http%3A%2F%2Fa1.att.hudong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612095840&t=7e06627dad3da4ebefd5cedf70c79516"
+		 width= "300px" height="200px">
+	<img alt="图片路径错误时显示的文字"
+		 src = "adv01.jpg"
+		 width= "200px" height="200px">
+	<img alt="图片路径错误时显示的文字"
+		 src = "../pics/adv01.jpg"
+		 width= "300px" height="200px">
+
+	<h4> 2)超链接    a</h4>
+	<a href="http://www.taobao.com">淘宝</a>	
+	<br><!-- br 是换行标签 -->
+	<a href="login.html">登录</a>
+	<hr><!-- hr 是分割线标签 -->
+	<a href="#edu_list">跳转到学历列表</a>
+	<div>div</div>
+	
+	
+ 	<h4>4）表单标签  form input button textarea</h4>
+ 	<form>
+ 		账号：<input placeholder="请输入账号"><br>
+ 		密码：<input type="password"><br>
+ 		年龄：<input type="number"><br>
+ 		邮箱：<input type="email"><br>
+ 		爱好：<input type="checkbox">篮球
+ 			<input type="checkbox">读书
+ 			<input type="checkbox">手游
+ 			<input type="radio">王者<br>
+ 		学历：<input name="edu" type="radio">小学
+ 			<input name="edu" type="radio">初中
+ 			<input name="edu" type="radio">高中
+ 			<input name="edu" type="radio">大学<br>
+ 		介绍：<textarea rows="10",cols="30" >测试内容
+ 		
+ 		
+ 		</textarea><br>
+ 		<input type="submit"  value="submit提交按钮，点击将会跳转到form的action  属性指定的资源"><br>
+ 		<input type = "button" vlaue="button普通按钮，默认不执行任何操作"><br>
+ 		<input type = "reset" value="reset重置按钮，重置表单的输入的内容"> <br>
+ 		
+ 		<button>默认是submit 提交按钮</button><br>
+ 		<button type="button">button普通按钮</button><br>
+ 		<button type="reset">reset重置按钮</button><br>
+ 	</form>
+	
+
+</body>
+</html>
